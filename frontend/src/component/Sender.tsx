@@ -18,6 +18,7 @@ const Sender = () => {
       setSocket(null);
     };
 
+    
     socket.onerror = (error) => {
       console.error("WebSocket error:", error);
     };

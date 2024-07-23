@@ -26,6 +26,7 @@ wss.on('connection', function connection(ws) {
         if(ws!==senderSocket){
             return;
         }
+        
         console.log("create offer")
         recieverSocket?.send(JSON.stringify({type:'createOffer',sdp:message.sdp}))
     }
